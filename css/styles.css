@@ -1297,14 +1297,17 @@ input[type="checkbox"]:checked:after {
     flex-direction: column;
     padding: 30px 15px;
   }
+  img {
+    width: 100%;
+  }
   .member-card {
     width: 450px;
     height: 622px;
     flex-shrink: 0;
+    justify-content: center;
   }
   .regular-clients {
     width: 450px;
-    height: 399px;
     flex-shrink: 0;
     top: 4395px;
     left: 15px;
