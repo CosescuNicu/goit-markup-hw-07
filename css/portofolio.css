@@ -55,10 +55,12 @@ a:hover {
 
 .global-header {
   position: absolute;
+  display: flex;
+  align-items: center;
   width: 1600px;
   height: 80px;
   top: 0px;
-  background: #ffffff;
+  background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid #ececec;
 }
 
@@ -76,12 +78,20 @@ a:hover {
   letter-spacing: 0.03em;
 }
 
+.header-nav {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  left: 453px;
+  column-gap: 50px;
+  width: 259px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
 .nav-first-item {
-  position: absolute;
   width: 42px;
   height: 16px;
-  left: 453px;
-  top: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -91,11 +101,8 @@ a:hover {
 }
 
 .nav-second-item {
-  position: absolute;
   width: 58px;
   height: 16px;
-  left: 545px;
-  top: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -105,11 +112,8 @@ a:hover {
 }
 
 .nav-third-item {
-  position: absolute;
   width: 59px;
   height: 16px;
-  left: 653px;
-  top: 32px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
@@ -117,6 +121,7 @@ a:hover {
   line-height: 16px;
   letter-spacing: 0.02em;
 }
+
 .underline::after {
   content: "";
   position: absolute;
@@ -125,17 +130,19 @@ a:hover {
   width: 65px;
   height: 4px;
   flex-shrink: 0;
-  left: 0;
-  top: 45px;
+  top: 60px;
 }
-/* .underline:hover::after {
-  width: 100%;
-  transition-duration: -250ms;
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-} */
+
+.header-contact {
+  position: absolute;
+  display: flex;
+  left: 1042px;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 40px;
+}
 
 .external-link-header-mail {
-  position: absolute;
   display: inline-flex;
   align-items: center;
   width: 161px;
@@ -155,7 +162,6 @@ a:hover {
   letter-spacing: 0.28px;
   margin: 0;
 }
-
 .envelop-icons {
   width: 16px;
   height: 12px;
@@ -168,9 +174,7 @@ a:hover {
   transition: 0.5s ease;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .external-link-header-phone {
-  position: absolute;
   display: inline-flex;
   align-items: center;
   top: 32px;
